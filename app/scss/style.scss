@@ -1,0 +1,14 @@
+/* общие блоки */
+@@include('./_vars.scss');
+@@include('./_fonts.scss');
+/* START мои преднастройки _global.scss =================== */
+@@include('./_global.scss');
+/* END мои преднастройки _global.scss =================== */
+
+/* START _main =================== */
+@@include('./_main.scss');
+/* end _main =================== */
+
+
+/* адаптив */
+@@include('./_media.scss');

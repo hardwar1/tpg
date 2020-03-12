@@ -1,0 +1,8 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+.vs
+.psd
+
+node_modules/
+backupimg/
