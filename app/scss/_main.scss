@@ -382,6 +382,7 @@
 
   &__btn {
     position: relative;
+    display: inline-block;
     width: 92px;
     height: 92px;
     margin-bottom: 35px;
@@ -414,45 +415,6 @@
     line-height: 24px;
   }
 } /* strategic ================ */
-
-.video {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  cursor: pointer;
-  background-color: #000;
-
-  &__link {
-  }
-
-  &__item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-
-  &__btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: none;
-    margin-bottom: 0;
-    background-color: rgba(251, 79, 79, .5);
-    transform: translate(-50%, -50%);
-  }
-
-  &.video--enabled &__btn {
-    display: block;
-  }
-
-  &:hover &__btn {
-    background-color: $red;
-  }
-}
 
 .news {
   margin-bottom: 80px;
