@@ -19,10 +19,10 @@
         <nav>
           <ul class="header__menu">
             <li class="header__link red-line"><a href="#">home</a></li>
-            <li class="header__link red-line"><a href="#">Services</a></li>
-            <li class="header__link red-line"><a href="#">about us</a></li>
-            <li class="header__link red-line"><a href="#">news</a></li>
-            <li class="header__link red-line"><a href="#">contact</a></li>
+            <li class="header__link red-line"><a href="#services">Services</a></li>
+            <li class="header__link red-line"><a href="#about">about us</a></li>
+            <li class="header__link red-line"><a href="#news">news</a></li>
+            <li class="header__link red-line"><a href="#contact">contact</a></li>
           </ul>
         </nav>
       </div>
@@ -33,7 +33,7 @@
         </div>
         <div class="header__btn-wrapper">
           <button class="header__btn btn">Get started</button>
-          <button class="header__btn btn btn--g">Learn more</button>
+          <a href="#strategic" class="header__btn btn btn--g">Learn more</a>
         </div>
       </div>
     </div>
@@ -49,7 +49,7 @@
     </div>
   </header>
   <!-- header ================ -->
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <h3 class="services__title title">our services</h3>
       <div class="services__sub-title sub-title">
@@ -139,11 +139,11 @@
     <div class="container">
       <h2 class="contact-us__title">Contact us for a FREE, NO OBLIGATION confidential
         exploration of your needs</h2>
-      <button class="contact-us__btn btn">Contact Us</button>
+      <a href="#contact" class="contact-us__btn btn">Contact Us</a>
     </div>
   </section>
   <!-- contact-us ================ -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <h3 class="about__title title">about us</h3>
       <div class="about__sub-title sub-title">
@@ -325,9 +325,21 @@
         the world’s great companies into sharper, smarter, better versions of themselves.
       </p>
     </div>
+
+    <div id="strategic" class="strategic-video video video--enabled">
+      <a class="video__link" href="https://youtu.be/DVoneFBnwXI">
+        <picture>
+          <source srcset="https://i.ytimg.com/vi_webp/DVoneFBnwXI/maxresdefault.webp" type="image/webp">
+          <img class="video__item" src="https://i.ytimg.com/vi/DVoneFBnwXI/maxresdefault.jpg" alt="">
+        </picture>
+      </a>
+      <button class="strategic__btn video__btn" aria-label="Play video">
+        <div class="strategic__triangle"></div>
+      </button>
+    </div>
   </section>
   <!-- strategic ================ -->
-  <section class="news">
+  <section class="news" id="news">
     <div class="container">
       <h3 class="news__title title">news</h3>
       <div class="news__sub-title sub-title">
@@ -343,6 +355,7 @@
             </div>
             <div class="news__item--wide">
               <div class="news__info">
+                <div class="arrow arrow--left"></div>
                 <h4 class="news__item-title red-line">
                   <a href="#"> Why financial institutions need a new IT model</a>
                 </h4>
@@ -358,6 +371,7 @@
           <div class="news__sub-row">
             <div class="news__item--wide">
               <div class="news__info">
+                <div class="arrow arrow--right"></div>
                 <h4 class="news__item-title red-line">
                   <a href="#"> Reimagining IT for an omnichannel world</a>
                 </h4>
@@ -377,6 +391,7 @@
         <div class="news__item--high">
           <a href="#"><img src="images/news3.jpg" alt="wall with pictures"></a>
           <div class="news__info">
+            <div class="arrow arrow--top"></div>
             <h4 class="news__item-title red-line">
               <a href="#"> Making the most of generation assets in turbulent times</a>
             </h4>
@@ -419,7 +434,7 @@
                 <a href="mailto:mynameisskokov@gmail.com">mynameisskokov@gmail.com</a>
               </div>
             </div>
-            <div class="footer__item">
+            <div class="footer__item" id="contact">
               <h3 class="footer__title red-line">contact</h3>
               <div class="footer__text">Please contact us using contact form below.</div>
               <form action="#">

@@ -20,6 +20,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-stylelint": "^13.0.0",
     "gulp-uglify": "^3.0.2",
+    "magnific-popup": "^1.1.0",
     "node-sass": "^4.13.0",
     "normalize.css": "^8.0.1",
     "sass": "^1.24.0",
