@@ -1,34 +1,35 @@
 @font-face {
-  font-family: "AktivGroteskCorp";
-
-  src: url("../fonts/AktivGroteskCorp-Regular.woff2") format("woff2"),
-    url("../fonts/AktivGroteskCorp-Regular.woff") format("woff"),
-    url("../fonts/AktivGroteskCorp-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?gldrq2');
+  src:  url('../fonts/icomoon.eot?gldrq2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?gldrq2') format('truetype'),
+    url('../fonts/icomoon.woff?gldrq2') format('woff');
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
-@font-face {
-  font-family: "AktivGroteskCorp";
-
-  src: url("../fonts/AktivGroteskCorp-Medium.woff2") format("woff2"),
-    url("../fonts/AktivGroteskCorp-Medium.woff") format("woff"),
-    url("../fonts/AktivGroteskCorp-Medium.ttf") format("truetype");
-
-  font-weight: 500;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
   font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: "AktivGroteskCorp";
-
-  src: url("../fonts/AktivGroteskCorp-Bold.woff2") format("woff2"),
-    url("../fonts/AktivGroteskCorp-Bold.woff") format("woff"),
-    url("../fonts/AktivGroteskCorp-Bold.ttf") format("truetype");
-
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-vk:before {
+  content: "\f189";
+}
+.icon-telegram:before {
+  content: "\f2c6";
 }

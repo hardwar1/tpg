@@ -30,4 +30,5 @@ $(function () {
   });
   // magnific-popap video youtube
 
+  new WOW().init();
 });

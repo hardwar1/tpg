@@ -2,7 +2,6 @@
   position: relative;
   margin-bottom: 50px;
   color: #fff;
-  background-image: url(../images/main-bg.jpg);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
@@ -46,6 +45,7 @@
     font-size: 60px;
     font-weight: bold;
     line-height: 74px;
+    animation: fadeInRight 0.5s;
   }
 
   &__text {
@@ -53,12 +53,14 @@
     margin-bottom: 45px;
     font-size: 20px;
     line-height: 28px;
+    animation: fadeInLeft 0.5s;
+    animation-delay: 0.5s;
   }
 
   &__btn-wrapper {
     display: flex;
 
-    button + button {
+    a {
       margin-left: 30px;
     }
   }
@@ -89,6 +91,7 @@
     font-weight: bold;
     background-color: $red;
     border-radius: 2px;
+    animation: pulse 1s infinite;
 
     &::after {
       position: absolute;
@@ -169,6 +172,27 @@
   &__item {
     width: 225px;
     margin: 0 30px 50px;
+    opacity: 0;
+
+    &:nth-child(4n + 1) {
+      animation: fadeInLeft .5s forwards;
+      
+    }
+
+    &:nth-child(4n + 2) {
+      animation: fadeInUp .5s forwards;
+      animation-delay: .4s;
+    }
+
+    &:nth-child(4n + 3) {
+      animation: fadeInUp .5s forwards;
+      animation-delay: .8s;
+    }
+
+    &:nth-child(4n) {
+      animation: fadeInRight .5s forwards;
+      animation-delay: 1.2s;
+    }
   }
 
   &__item-icon {
@@ -261,6 +285,9 @@
     line-height: 24px;
     color: $grey;
     text-align: left;
+    opacity: 0;
+    animation: fadeInUp .4s forwards;
+    animation-delay: .2s;
 
     & + p {
       margin-top: -13px;
@@ -313,6 +340,23 @@
     img {
       width: 185px;
       margin: 5px;
+      opacity: 0;
+      animation-fill-mode: forwards;
+
+      &:nth-child(3n + 1) {
+        animation: fadeInLeft .5s forwards;
+        
+      }
+  
+      &:nth-child(3n + 2) {
+        animation: fadeInUp .5s forwards;
+        animation-delay: .2s;
+      }
+  
+      &:nth-child(3n + 3) {
+        animation: fadeInUp .5s forwards;
+        animation-delay: .4s;
+      }
     }
   }
 
@@ -324,7 +368,11 @@
       width: 100%;
       object-fit: cover;
       object-position: center;
+      opacity: 0;
+      animation: fadeInUp 0.4s forwards;
     }
+
+    
   }
 
   &__img-hov {
@@ -345,6 +393,37 @@
 
   .posrel {
     width: 16.666%;
+
+    &:nth-child(6n + 1) img {
+      animation: fadeInUp .5s forwards;
+      animation-delay: .2s;
+    }
+
+    &:nth-child(6n + 2) img {
+      animation: fadeInUp .5s forwards;
+      animation-delay: .4s;
+    }
+
+    &:nth-child(6n + 3) img {
+      animation: fadeInUp .5s forwards;
+      animation-delay: .6s;
+    }
+
+    &:nth-child(6n + 4) img {
+      animation: fadeInUp .5s forwards;
+      animation-delay: .8s;
+    }
+
+    &:nth-child(6n + 5) img {
+      animation: fadeInUp .5s forwards;
+      animation-delay: 1s;
+    }
+
+    &:nth-child(6n + 6) img {
+      animation: fadeInUp .5s forwards;
+      animation-delay: 1.2s;
+    }
+
 
     &:hover .about__img-hov {
       height: 100%;
@@ -529,7 +608,7 @@
     right: 100%;
     transform: rotate(180deg);
   }
-}
+} /* arrow ================ */
 
 .disfl {
   display: flex;
@@ -539,9 +618,20 @@
 
 .social {
   display: flex;
+  align-items: center;
 
   a {
     display: block;
+
+    &::before {
+      font-size: 24px;
+      color: $red;
+      transition: color 0.3s;
+    }
+
+    &:hover:before  {
+      color: rgb(7, 131, 214);
+    }
 
     & + a {
       padding-left: 15px;
@@ -550,8 +640,9 @@
     }
   }
 
-  .twitter {
-    transform: translateY(3px);
+  span {
+    display: inline-block;
+    margin-right: 30px;
   }
 } /* social ================ */
 
@@ -618,8 +709,10 @@
   &__title {
     margin-bottom: 40px;
     font-size: 24px;
+    font-weight: bold;
     line-height: 32px;
     color: $red;
+    text-transform: uppercase;
 
     &::before {
       width: 50px;
